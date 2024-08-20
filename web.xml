@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>LTWWW_JAVA_DHKTPM17B_TUAN01_VOTRUONGKHANG</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+      <servlet-name>ServletTuan01</servlet-name>
+      <servlet-class>fit.iuh.tuan01.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+      <servlet-name>LoginServlet</servlet-name>
+      <servlet-class>fit.iuh.tuan01.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>ServletTuan01</servlet-name>
+      <url-pattern>/about-me</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+      <servlet-name>LoginServlet</servlet-name>
+      <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>username</param-name>
+  	<param-value>khangdora</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>password</param-name>
+  	<param-value>12345678</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Võ Trường Khang</param-value>
+  </context-param>
+  
+</web-app>
